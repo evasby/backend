@@ -1,0 +1,15 @@
+.header{
+	svg{	
+		.st0{
+			transition: fill 0.2s;
+		}
+		.st1{
+			fill:#C0252A;
+		}
+		&:hover{
+			.st0{
+				fill: #C0252A;
+			}
+		}
+	}
+}

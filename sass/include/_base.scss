@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  min-width: 320px;
+	//background-color: #1c1c1e;
+	//font-family: Arial, Helvetica, sans-serif;
+  font-family: opensans;
+  font-size: 12px;
+  line-height: 18px;
+  //font-weight: bold;
+  color: #000;
+	@include break1{
+		//background: #1c1c1e url('../images/page_background.jpg') 50% -37px no-repeat;
+	}
+  .fira{
+
+  }
+}
+a{
+
+}
+b, strong{
+  font-family: opensansbold;
+}
+em{
+  font-style: italic;
+}
+li{
+  padding: 0 0 0 18px;
+  position: relative;
+  line-height: 18px;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 1px;
+    width: 8px;
+    height: 8px;
+    background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkY0Q0FDNEE1RUQ0RDExRTZCQjAzRkNDRDU5NUE3RjQ4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkY0Q0FDNEE2RUQ0RDExRTZCQjAzRkNDRDU5NUE3RjQ4Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjRDQUM0QTNFRDREMTFFNkJCMDNGQ0NENTk1QTdGNDgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RjRDQUM0QTRFRDREMTFFNkJCMDNGQ0NENTk1QTdGNDgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5NlfWYAAAAZklEQVR42mJgIA4oMVAAZgLxOyA2JkezIBCfAeL/UFpwwAwxhnoDZMgqcsMC2ZCZ1DCkHCTACOWQC9KZGCgDxuRoOENuOAgi+X83XdMCsua75CSkVVDNZOUHmO1kZyYYcMElARBgAIXzIORP4IMtAAAAAElFTkSuQmCC')
+ left top no-repeat;
+    background-size: 100% 100%;
+  }
+}
+button, input[type="reset"], input[type="button"], input[type="submit"] {
+  box-shadow: none;
+}
+a, input, textarea, select, button, div{
+  &:focus{
+    outline: none;
+  }
+}
+pre{
+  word-wrap: break-word;
+}
