@@ -1,0 +1,51 @@
+.content-front{
+	background: #1b1815 url('../images/bg-front.jpg') 50% 50% no-repeat;
+	background-size: cover;
+	color: #fff;
+	&_wrap{
+		max-width: $width;
+		margin: 0 auto;
+		padding: 66px 0 348px 110px;
+		//mobile
+		@include break3{
+			padding: 36px 10px 30px 10px;
+		}
+	}
+	&_title{
+		max-width: 475px;
+		h1{
+			margin: 0 0 32px;
+			letter-spacing: 0.8px;
+		}
+		p{
+			margin: 0 0 13px;
+			text-transform: uppercase;
+			font-family: $font;
+			letter-spacing: 0.5px;
+			font-size: 35px;
+			line-height: 1;
+		}
+		//mobile
+		@include break3{
+			h1{
+				margin: 0 0 23px;
+			}
+		}
+	}
+	&_text{
+		max-width: 475px;
+		margin: 0 0 45px;
+		letter-spacing: 0.3px;
+		p{
+			font-size: 13px;
+			line-height: 23px;
+		}
+		a{
+			@include link(#fff, #fff);
+		}
+		//mobile
+		@include break3{
+			margin: 0 0 34px;
+		}
+	}
+}

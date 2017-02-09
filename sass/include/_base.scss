@@ -16,9 +16,28 @@ body{
 	@include break3{
 		padding: 77px 0 0;
 	}
-  .fira{
-
-  }
+}
+h1{
+  font-family: $fontBold;
+  font-size: 45px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+h2{
+  font-family: $fontBold;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+h3{
+  font-family: $fontContent;
+  font-size: 14px;
+}
+h4{
+  font-family: $fontContent;
+  font-size: 13px;
+}
+p{
+  font-size: 12px;
 }
 a{
   text-decoration: none;

@@ -1,0 +1,31 @@
+.arrows{
+	height: 47px;
+	margin: 43px 0 0 50px;
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 15px;
+		height: 17px;
+		background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAiCAYAAACjv9J3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkVFQUJGQjBFRUVGNjExRTZBRTU0QTY5RDg0MkUyQjJGIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkVFQUJGQjBGRUVGNjExRTZBRTU0QTY5RDg0MkUyQjJGIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RUVBQkZCMENFRUY2MTFFNkFFNTRBNjlEODQyRTJCMkYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RUVBQkZCMERFRUY2MTFFNkFFNTRBNjlEODQyRTJCMkYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7hbkx+AAABsUlEQVR42uzXO08CQRQF4EVtDQq+QB5q4k+wsLcx/lljayOVBhffL0B8dcbWRAvjeK7eNTfjsjszO6uNk5wEmNn5AoGdQ0EpFYjRQsaRdeQxyD6mkE3kFVn7fpVQkSP1Nc6RWW3ONmXkkPe7kHP6wirSFfCMB/AGaSShPmACDwTY1NcMu3BewGcWcEmAt3FgEhrBPQFP+wDTUErNEJ5EOrzuDllI2tfkIyO4zxuexsBWoCmqwycCJjAU4KLJfjbfSoKvGThGlgV4bwraojr85gK6oJQ6MmDwAVmy3cP1FkfwjgtIKWg3/F8ZI8EfjH801zGGhMg7soE85WhRi9hCnumdjiIryDZP5DHKvP/q52P8ZOa4Tig+7csZa0rSoX6FVKIJgi9zgEsaWNXvSBWeULywlBGUR143AocVswju8IVZwR63EONi5gJPiCPvB5hWzKKaEvJGtmCfj0KrU0b2o30DuMjrFJ+5tSzFrC/gYgLYFmDdRzGL2kI7BpbgIA20OcRlW9gTcJGfx/598NEcGhpMz3dtQZe60mCAxotJm/fVkZoMGZdrX8WMoJYLSPkQYACVVmGkuQ5xGQAAAABJRU5ErkJggg==') left top no-repeat;
+		background-size: contain;
+		animation: bounce 2s infinite;
+	}
+	//mobile
+	@include break3{
+		margin: 0 0 0 50px;
+	}
+}
+@keyframes bounce{
+	0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+	40% {
+    transform: translateY(-28px);
+  }
+	60% {
+  	transform: translateY(-15px);
+  }
+}

@@ -17,7 +17,7 @@ $(document).ready(function(){
   });
   //hide menu
   $(".menu").click(function(e) {
-    if ($(e.target).closest(".menu_inner").length) return;
+    if ($(e.target).closest(".menu_wrap").length) return;
     $('.toggle').removeClass('toggle__on');
     $(".menu").removeClass('menu__on');
     e.stopPropagation();

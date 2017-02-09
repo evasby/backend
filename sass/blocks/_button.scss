@@ -1,0 +1,13 @@
+.button{
+	display: inline-block;
+	padding: 10px 13px 9px;
+	border: 1px solid $red;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+	@include link(#000, $red);
+	transition: color 0.2s;
+	&__white{
+		@include link(#fff, $red);
+	}
+}
