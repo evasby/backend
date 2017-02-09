@@ -5,10 +5,13 @@
 }
 //*********************************************************************************/
 @mixin break1 {
-  @media all and (min-width: 1000px) { @content; }
+  @media all and (max-width: 1190px) { @content; }
 }
 @mixin break2 {
-  @media all and (min-width: 600px) { @content; }
+  @media all and (max-width: 1024px) { @content; }
+}
+@mixin break3 {
+  @media all and (max-width: 768px) { @content; }
 }
 //*********************************************************************************/
 @mixin link($normal, $hover){

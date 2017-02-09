@@ -1,0 +1,61 @@
+.footer{
+	padding: 251px 10px 70px;
+	background-color: #1b1815;
+	//mobile
+	@include break3{
+		padding: 60px 10px 30px;
+	}
+	&_inner{
+		max-width: 800px;
+		margin: 0 auto;
+		@include clearfix;
+		color: #fff;
+		font-family: myriadpro;
+		font-size: 12px;
+		letter-spacing: 0.2px;
+		opacity: 0.5;
+		transition: opacity 0.2s;
+		a{
+			@include link(#fff, #fff);
+		}
+		.footer:hover &{
+			opacity: 1;
+		}
+	}
+	&_left{
+		float: left;
+		width: 33.33%;
+		padding: 0 0 0 139px;
+		//mobile
+		@include break3{
+			float: none;
+			width: auto;
+			padding: 0;
+			margin: 0 0 30px;
+		}
+	}
+	&_center{
+		float: left;
+		width: 33.33%;
+		padding: 0 0 0 76px;
+		//mobile
+		@include break3{
+			float: none;
+			width: auto;
+			padding: 0;
+			margin: 0 0 30px;
+		}
+	}
+	&_right{
+		float: left;
+		width: 33.33%;
+		padding: 0 0 0 57px;
+		//mobile
+		@include break3{
+			float: none;
+			width: auto;
+			padding: 0;
+			margin: 0 0 30px;
+		}
+	}
+}

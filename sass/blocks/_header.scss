@@ -1,5 +1,35 @@
 .header{
-	svg{	
+	height: 124px;
+	padding: 39px 0 0;
+	background-color: $black;
+	//mobile
+	@include break3{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		padding: 20px 0;
+	}
+	&_inner{
+		max-width: $width;
+		margin: 0 auto;
+		padding: 0 10px;
+		@include clearfix;
+	}
+	&_right{
+		@include clearfix;
+		padding: 12px 0 0;
+	}
+
+
+
+
+
+
+
+
+	/*svg{	
 		.st0{
 			transition: fill 0.2s;
 		}
@@ -11,5 +41,5 @@
 				fill: #C0252A;
 			}
 		}
-	}
+	}*/
 }
