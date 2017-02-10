@@ -3,18 +3,21 @@
 *:after{
   box-sizing: border-box;
 }
-.temp{
-  height: 2761px;
-}
 body{
   min-width: 320px;
   font-family: opensans;
   font-size: 12px;
   line-height: 18px;
   color: $black;
+  &.fixed{
+    padding: 124px 0 0;
+  }
   //mobile
 	@include break3{
 		padding: 77px 0 0;
+    &.fixed{
+      padding: 77px 0 0;
+    }
 	}
 }
 h1{
@@ -43,7 +46,7 @@ a{
   text-decoration: none;
 }
 b, strong{
-  font-family: opensansbold;
+  font-family: $fontContentBold;
 }
 em{
   font-style: italic;
@@ -58,4 +61,34 @@ a, input, textarea, select, button, div{
 }
 pre{
   word-wrap: break-word;
+}
+::-webkit-input-placeholder {
+  font-family: $fontContent;
+  font-size: 13px;
+  color: rgba(255,255,255,.7);
+}
+:-moz-placeholder {
+  font-family: $fontContent;
+  font-size: 13px;
+  color: rgba(255,255,255,.7);
+}
+::-moz-placeholder {
+  font-family: $fontContent;
+  font-size: 13px;
+  color: rgba(255,255,255,.7);
+}
+:-ms-input-placeholder {
+  font-family: $fontContent;
+  font-size: 13px;
+  color: rgba(255,255,255,.7);
+}
+::-ms-input-placeholder {
+  font-family: $fontContent;
+  font-size: 13px;
+  color: rgba(255,255,255,.7);
+}
+:placeholder-shown {
+  font-family: $fontContent;
+  font-size: 13px;
+  color: rgba(255,255,255,.7);
 }

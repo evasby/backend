@@ -2,16 +2,27 @@
 	margin: -196px 0 0;
 	position: relative;
 	z-index: 1;
-	text-align: center;
+	//tablet
+	@include break1{
+		margin: 0;
+	}
 	&_wrap{
 		max-width: $width;
+		padding: 0 10px;
 		margin: 0 auto;
 	}
 	&_head{
 		height: 196px;
 		padding: 102px 0 0;
+		text-align: center;
 		position: relative;
 		z-index: 1;
+		//tablet
+		@include break1{
+			height: auto;
+			padding: 56px 0 0;
+			text-align: left;
+		}
 	}
 	&_white{
 		position: relative;
@@ -27,6 +38,12 @@
 			border-style: solid;
 			border-width: 0 380px 196px 380px;
 			border-color: transparent transparent #fff transparent;
+			//tablet
+			@include break1{
+				top: -150px;
+				margin: 0 0 0 -250px;
+				border-width: 0 250px 150px 250px;
+			}
 		}
 		&:after{
 			content: '';
@@ -40,11 +57,20 @@
 			border-width: 97px 313px 0 313px;
 			border-color: #fff transparent transparent transparent;
 		}
+		//tablet
+		@include break1{
+			&:before{
+				display: none;
+			}
+			&:after{
+				display: none;
+			}
+		}
 	}
 	&_more{
 		display: inline-block;
 		padding: 0 14px 0 0;
-		margin: 0 0 41px 3px;
+		margin: 0 0 40px 3px;
 		font-size: 12px;
 		text-transform: uppercase;
 		letter-spacing: -0.3px;
@@ -79,31 +105,103 @@
 			background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjgxRkY5RjlDRUYwNDExRTY4NEVERTVERDk3QjFBOTI0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjgxRkY5RjlERUYwNDExRTY4NEVERTVERDk3QjFBOTI0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ODFGRjlGOUFFRjA0MTFFNjg0RURFNUREOTdCMUE5MjQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6ODFGRjlGOUJFRjA0MTFFNjg0RURFNUREOTdCMUE5MjQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7g/DlzAAAA50lEQVR42pyT3Q2CUAyFWzfgXTTB6ALXFVgFRmAFVpBVdARYQJ9E3hmhnuKViESkNCHN/TkfPaUQzYjH5hBNna/+AZrtwTFRCdBpMQThiClgpgSghJZGAzEA4p8RiOeCvJ1EBUJ0DOtrZbHTBUQpUiGv5RnVOXMlo4qYWhHZhfWtZWxm2My7IpWKU5GhX/nuATb1DnKFHK+G19krpJfKCEH9S5B1fqIldrrK1Q5yvL5fK7YCIM79UgEX09fB5Op85Gim2kjfAEMF+89hy8zDBpGDhdI3s/DzYv93pgCWhjr0JPh1/hRgAAxaY2sYJF+jAAAAAElFTkSuQmCC') left top no-repeat;
 			background-size: contain;
 		}
+		//mobile
+		@include break3{
+			margin: 0 0 31px 3px;
+		}
 	}
+	&_title{
+		//mobile
+		@include break3{
+			padding: 0 40px 0 0;
+		}
+	}	
 	&_list{
 		@include clearfix;
+		padding: 102px 0 98px;
+		//bobile
+		@include break3{
+			padding: 32px 0 30px;
+		}
 	}
 	&_item{
 		float: left;
-		width: 25%;
+		width: 23.50%;	
+		margin: 0 0 0 2%;	
+		border: 1px solid $gray;
+		transition: border-color 0.2s;
+		&:first-child{
+			margin: 0;
+		}
+		&:hover{
+			border-color: $black;
+		}
+		//tablet
+		@include break1{
+			width: 49%;
+			margin: 0 0 2% 2%;
+			&:nth-child(2n-1){
+				margin: 0 0 2%; 
+			}
+		}
+		//mobile
+		@include break3{
+			width: 100%;
+			margin: 0 0 30px;
+			&:nth-child(2n-1){
+				margin: 0 0 30px;
+			}
+		}
+	}
+	&_link{
+		display: block;
+		overflow: hidden;
+		height: 272px;
+		padding: 0 20px 0 34px;
+		@include link($black, $black);
 	}
 	&_image{
 		display: block;
+		height: 125px;
+		padding: 16px 0 0;
+		text-align: center;	
+		&:after{
+			content: "";
+			display: inline-block;
+		  vertical-align: middle;
+		  height: 100%;
+		}
+		svg{
+			vertical-align: middle;
+		}
 	}
 	&_name{
-		display: block;
-		text-align: left;
+		display: inline;
+		font-size: 14px;
+		line-height: 22px;
+		text-transform: uppercase;
+		letter-spacing: 0.3px;
+		//underline
+		transition: box-shadow 0.2s;
+		.services-block_item:hover &{
+			box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,1);
+		}
 	}
 	&_text{
 		display: block;
+		padding: 12px 0 0;
 		text-align: left;
+		letter-spacing: 0.3px;
 	}
 	&_svg{
 		&__arrows{
+			width: 64px;
+			height: 64px;
+			margin: 4px 12px 0 0;
 			.st0{
 				fill: none;
-				stroke: #000000;
-				stroke-width: 2;
+				stroke: $black;
+				stroke-width: 8;
 				stroke-linecap: round;
 				stroke-miterlimit: 10;
 				transition: stroke 0.2s;
@@ -126,6 +224,9 @@
 			}
 		}
 		&__gear{
+			width: 69px;
+			height: 69px;
+			margin: 2px 12px 0 0;
 			.st0{
 				transition: fill 0.2s;
 				fill-rule: evenodd;
@@ -143,6 +244,9 @@
 			}
 		}
 		&__braces{
+			width: 64px;
+			height: 60px;
+			margin: 0 10px 2px 0;
 			.st0{
 				transition: fill 0.2s;
 			}
@@ -153,31 +257,34 @@
 			}
 			.st1{
 				fill: none;
-				stroke: #CC2128;
-				stroke-width: 2;
-				stroke-linecap: round;
-				stroke-miterlimit: 10;
+				stroke:#CC2128;
+				stroke-width:9;
+				stroke-linecap:round;
+				stroke-miterlimit:10;
 			}
 		}
 		&__lamp{
+			width: 75px;
+			height: 80px;
+			margin: 0 12px 6px 0;
 			.st0{
 				fill-rule: evenodd;
 				clip-rule: evenodd;
 				transition: fill 0.2s;
-			}
-			
+			}		
 			.st1{
 				fill-rule: evenodd;
 				clip-rule: evenodd;
 				fill: none;
 				stroke: #CC2128;
+				stroke-width: 4;
 				stroke-linecap: round;
 				stroke-miterlimit: 10;
 			}
 			.st2{
 				fill: none;
 				stroke: #CC2128;
-				stroke-width: 2;
+				stroke-width: 8;
 				stroke-linecap: round;
 				stroke-miterlimit: 10;
 			}
@@ -185,15 +292,15 @@
 				fill-rule: evenodd;
 				clip-rule: evenodd;
 				fill: none;
-				stroke: #000000;
-				stroke-width: 2;
+				stroke: $black;
+				stroke-width: 7;
 				stroke-miterlimit: 10;
 				transition: stroke 0.2s;
 			}
 			.st4{
-				fill: #000200;
-				stroke: #000000;
-				stroke-width: 0.5;
+				fill: $black;
+				stroke: $black;
+				stroke-width: 2;
 				stroke-miterlimit: 10;
 				transition: fill 0.2s,
 										stroke 0.2s;

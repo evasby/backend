@@ -1,11 +1,15 @@
 .button{
 	display: inline-block;
+	height: 39px;
 	padding: 10px 13px 9px;
 	border: 1px solid $red;
+	font-family: $fontContentBold;
 	font-size: 13px;
 	text-transform: uppercase;
-	letter-spacing: 0.8px;
+	letter-spacing: 0.5px;
+	background-color: transparent;
 	@include link(#000, $red);
+	cursor: pointer;
 	transition: color 0.2s;
 	&__white{
 		@include link(#fff, $red);

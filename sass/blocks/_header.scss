@@ -2,14 +2,28 @@
 	height: 124px;
 	padding: 39px 0 0;
 	background-color: $black;
+	&__fixed{
+		padding: 19px 0 0;
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		height: 75px;
+		width: 100%;
+	}
 	//mobile
 	@include break3{
 		position: fixed;
+		z-index: 2;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: auto;
 		padding: 20px 0;
+		&__fixed{
+			height: auto;
+			padding: 20px 0;
+		}
 	}
 	&_wrap{
 		max-width: $width;
@@ -20,26 +34,14 @@
 	&_right{
 		@include clearfix;
 		padding: 12px 0 0;
-	}
-
-
-
-
-
-
-
-
-	/*svg{	
-		.st0{
-			transition: fill 0.2s;
+		.header__fixed &{
+			padding: 10px 0 0;
 		}
-		.st1{
-			fill:#C0252A;
-		}
-		&:hover{
-			.st0{
-				fill: #C0252A;
+		//mobile
+		@include break3{
+			.header__fixed &{
+				padding: 12px 0 0;
 			}
 		}
-	}*/
+	}
 }

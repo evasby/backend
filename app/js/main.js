@@ -2,8 +2,13 @@ $(document).ready(function(){
 	//fixed header show
 	$(window).scroll(function() {
     var top = $(document).scrollTop();
-    if (top < 100) $(".header").removeClass('header__fixed');
-    else $(".header").addClass('header__fixed');
+    if (top < 250) {
+      $(".header").removeClass('header__fixed');
+      $("body").removeClass('fixed');
+    } else {
+      $(".header").addClass('header__fixed');
+      $("body").addClass('fixed');
+    }
   });
   //menu toggle
   $('.toggle').click(function(){

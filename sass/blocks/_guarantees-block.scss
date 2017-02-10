@@ -1,3 +1,186 @@
 .guarantees-block{
-	background-color: #999;
+	background: #1b1815 url('../images/bg-guarantees.jpg') 50% top no-repeat;
+	background-size: cover;
+	&_wrap{
+		max-width: $width;
+		margin: 0 auto;
+		padding: 203px 10px 229px;
+		//mobile
+		@include break3{
+			padding: 56px 10px 30px;
+		}
+	}
+	&_title{
+		text-align: center;
+		color: #fff;
+		letter-spacing: 1px;
+		//mobile
+		@include break3{
+			text-align: left;
+		}
+	}
+	&_list{
+		@include clearfix;
+		padding: 61px 0 0;
+		//mobile
+		@include break3{
+			padding: 32px 0 0;
+		}
+	}
+	&_item{
+		float: left;
+		width: 31.45%;
+		margin: 0 0 0 2.82%;
+		border: 1px solid rgba(255,255,255,.5);
+		transition: border-color 0.2s;
+		&:hover{
+			border-color: rgba(255,255,255,1);
+		}
+		&:first-child{
+			margin: 0;
+		}
+		//mobile
+		@include break3{
+			float: none;
+			width: 100%;
+			margin: 0 0 30px;
+			&:first-child{
+				margin: 0 0 30px;
+			}
+		}
+	}
+	&_link{
+		display: block;
+		height: 184px;
+		@include link(#fff, #fff);
+		@include clearfix;
+		//tablet2
+		@include break2{
+			height: 254px;
+		}
+		//mobile
+		@include break3{
+			height: 184px;
+		}
+	}
+	&_name{
+		min-height: 56px;
+		font-size: 14px;
+		line-height: 22px;
+		//mobile
+		@include break3{
+			max-width: 200px;
+		}
+	}
+	&_inner{
+		text-transform: uppercase;
+		//underline
+		transition: box-shadow 0.2s;
+		.guarantees-block_item:hover &{
+			box-shadow: inset 0px -1px 0px 0px rgba(255,255,255,1);
+		}
+	}
+	&_image{
+		float: left;
+		width: 36.61%;
+		padding: 40px 0 0 6px;
+		text-align: center;
+		svg{
+			width: 60px;
+			height: 60px;
+		}
+		//tablet2
+		@include break2{
+			float: none;
+			display: block;
+			width: 100%;
+			padding: 30px 0 0 30px;
+			text-align: left;
+		}
+		//mobile
+		@include break3{
+			float: left;
+			width: 100px;
+			padding: 40px 0 0 2px;
+			text-align: center;
+		}
+	}
+	&_right{
+		display: block;
+		padding: 36px 65px 0 0;
+		overflow: hidden;
+		//tablet2
+		@include break2{
+			padding: 24px 30px 0 30px;
+		}
+		//mobile
+		@include break3{
+			padding: 36px 40px 0 12px;
+		}
+	}
+	&_svg{
+		&__1{
+			.st0{
+				fill-rule: evenodd;
+				clip-rule: evenodd;
+				fill: #CA252A;
+			}
+			.st1{
+				fill-rule: evenodd;
+				clip-rule: evenodd;
+				fill: none;
+				stroke: #fff;
+				stroke-width: 8;
+				stroke-miterlimit: 10;
+				transition: stroke 0.2s;
+			}
+			.guarantees-block_item:hover &{
+				.st1{
+					stroke: #CA252A;
+				}
+			}
+		}
+		&__2{
+			.st0{
+				fill-rule: evenodd;
+				clip-rule: evenodd;
+				fill: #CA252A;
+			}
+			.st1{
+				fill-rule: evenodd;
+				clip-rule: evenodd;
+				fill: none;
+				stroke: #fff;
+				stroke-width: 8;
+				stroke-miterlimit: 10;
+				transition: stroke 0.2s;
+			}
+			.guarantees-block_item:hover &{
+				.st1{
+					stroke: #CA252A;
+				}
+			}
+		}
+		&__3{
+			.st0{
+				fill-rule: evenodd;
+				clip-rule: evenodd;
+				fill: #CA252A;
+			}
+			.st1{
+				fill-rule: evenodd;
+				clip-rule: evenodd;
+				fill: none;
+				stroke: #fff;
+				stroke-width: 8;
+				stroke-miterlimit: 10;
+				transition: stroke 0.2s;
+			}
+			.guarantees-block_item:hover &{
+				.st1{
+					stroke: #CA252A;
+				}
+			}
+		}
+	}
 }
