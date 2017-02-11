@@ -46,7 +46,8 @@ a{
   text-decoration: none;
 }
 b, strong{
-  font-family: $fontContentBold;
+  //font-family: $fontContentBold;
+  font-weight: bold;
 }
 em{
   font-style: italic;

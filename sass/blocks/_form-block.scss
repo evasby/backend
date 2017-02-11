@@ -1,33 +1,33 @@
 .form-block{
-	width: 799px;
-	max-width: 799px;
-	margin: 0 0 0 -400px;
-	padding: 95px 0 100px;
-	position: absolute;
-	z-index: 1;
-	bottom: -181px;
-	left: 50%;
-	background-color: #000;
-	text-align: center;
-	//tablet2
-	@include break2{
-		width: 700px;
-		margin: 0 0 0 -350px;
-	}
-	//mobile
-	@include break3{
-		width: 100%;
-		margin: 0;
-		padding: 55px 10px 60px;
-		position: static;
-		text-align: left;
+	position: relative;
+	&_position{
+		width: 799px;
+		max-width: 799px;
+		margin: 0 0 0 -400px;
+		padding: 96px 0 99px;
+		position: absolute;
+		z-index: 1;
+		top: -358px;
+		left: 50%;
+		background-color: #000;
+		text-align: center;
+		//tablet2
+		@include break2{
+			width: 700px;
+			margin: 0 0 0 -350px;
+		}
+		//mobile
+		@include break3{
+			width: 100%;
+			margin: 0;
+			padding: 55px 10px 60px;
+			position: static;
+			text-align: left;
+		}
 	}
 	&_title{
-		font-family: $fontBold;
-	  font-size: 45px;
-	  line-height: 1;
-	  text-transform: uppercase;
 	  color: #fff;
+	  letter-spacing: 0.5px; 
 	  //mobile
 		@include break3{
 			text-align: left;
@@ -36,7 +36,7 @@
 	&_wrap{
 		width: 566px;
 		margin: 0 auto 19px;
-		padding: 67px 0 0;
+		padding: 66px 0 0;
 		@include clearfix;
 		//mobile
 		@include break3{

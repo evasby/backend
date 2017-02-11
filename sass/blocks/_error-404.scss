@@ -1,0 +1,48 @@
+.error-404{
+	min-height: 857px;
+	padding: 107px 10px 0;
+	background: #1b1815 url('../images/bg-404.jpg') 50% top no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	//mobile
+	@include break3{
+		min-height: 0;
+		padding: 55px 10px;
+		text-align: left;
+	}
+	&_code{
+		font-family: $fontBold;
+		padding: 0 0 20px;
+		p{
+			font-size: 45px;
+			line-height: 1;
+			&:before{
+				content: '{';
+				margin: 0 14px 0 0;
+				color: $red;
+			}
+			&:after{
+				content: '}';
+				margin: 0 0 0 14px;
+				color: $red;
+			}
+		}	
+	}
+	&_title{
+		padding: 0 0 35px;
+		letter-spacing: 1px;
+		color: #fff;
+	}
+	&_text{
+		width: 395px;
+		margin: 0 auto 37px auto;
+		font-family: $font;
+		letter-spacing: 0.1px;
+		//mobile
+		@include break3{
+			width: 100%;
+			margin: 0 0 37px;
+		}
+	}
+}
