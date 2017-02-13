@@ -1,0 +1,114 @@
+.svg{
+	&__arrows{
+		.st0{
+			fill: none;
+			stroke: $black;
+			stroke-width: 8;
+			stroke-linecap: round;
+			stroke-miterlimit: 10;
+			transition: stroke 0.2s;
+		}
+		.st1{
+			fill-rule: evenodd;
+			clip-rule: evenodd;
+			fill: #C0252A;
+		}
+		.st2{
+			transition: fill 0.2s;
+		}
+		.services-block_item:hover &{
+			.st0{
+				stroke: #C0252A;
+			}
+			.st2{
+				fill: #C0252A;
+			}
+		}
+	}
+	&__gear{
+		.st0{
+			transition: fill 0.2s;
+			fill-rule: evenodd;
+			clip-rule: evenodd;
+		}
+		.st1{
+			fill-rule: evenodd;
+			clip-rule: evenodd;
+			fill: #C0252A;
+		}
+		.services-block_item:hover &{
+			.st0{
+				fill: #C0252A;
+			}
+		}
+	}
+	&__braces{
+		.st0{
+			transition: fill 0.2s;
+		}
+		.services-block_item:hover &{
+			.st0{
+				fill: #C0252A;
+			}
+		}
+		.st1{
+			fill: none;
+			stroke:#CC2128;
+			stroke-width:9;
+			stroke-linecap:round;
+			stroke-miterlimit:10;
+		}
+	}
+	&__lamp{
+		.st0{
+			fill-rule: evenodd;
+			clip-rule: evenodd;
+			transition: fill 0.2s;
+		}		
+		.st1{
+			fill-rule: evenodd;
+			clip-rule: evenodd;
+			fill: none;
+			stroke: #CC2128;
+			stroke-width: 4;
+			stroke-linecap: round;
+			stroke-miterlimit: 10;
+		}
+		.st2{
+			fill: none;
+			stroke: #CC2128;
+			stroke-width: 8;
+			stroke-linecap: round;
+			stroke-miterlimit: 10;
+		}
+		.st3{
+			fill-rule: evenodd;
+			clip-rule: evenodd;
+			fill: none;
+			stroke: $black;
+			stroke-width: 7;
+			stroke-miterlimit: 10;
+			transition: stroke 0.2s;
+		}
+		.st4{
+			fill: $black;
+			stroke: $black;
+			stroke-width: 2;
+			stroke-miterlimit: 10;
+			transition: fill 0.2s,
+									stroke 0.2s;
+		}
+		.services-block_item:hover &{
+			.st0{
+				fill: #C0252A;
+			}
+			.st3{
+				stroke: #C0252A;
+			}
+			.st4{
+				fill: #C0252A;
+				stroke: #C0252A;
+			}
+		}
+	}
+}

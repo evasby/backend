@@ -4,21 +4,11 @@
   box-sizing: border-box;
 }
 body{
-  min-width: 320px;
+  min-width: 300px;
   font-family: opensans;
   font-size: 12px;
   line-height: 18px;
   color: $black;
-  &.fixed{
-    padding: 124px 0 0;
-  }
-  //mobile
-	@include break3{
-		padding: 77px 0 0;
-    &.fixed{
-      padding: 77px 0 0;
-    }
-	}
 }
 h1{
   font-family: $fontBold;
@@ -46,7 +36,6 @@ a{
   text-decoration: none;
 }
 b, strong{
-  //font-family: $fontContentBold;
   font-weight: bold;
 }
 em{
@@ -59,6 +48,9 @@ a, input, textarea, select, button, div{
   &:focus{
     outline: none;
   }
+}
+textarea{
+  overflow: auto;
 }
 pre{
   word-wrap: break-word;

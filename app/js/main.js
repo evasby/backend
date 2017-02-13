@@ -3,11 +3,11 @@ $(document).ready(function(){
 	$(window).scroll(function() {
     var top = $(document).scrollTop();
     if (top < 250) {
-      $(".header").removeClass('header__fixed');
-      $("body").removeClass('fixed');
+      $(".header_position").removeClass('header_position__fixed');
+      //$("body").removeClass('fixed');
     } else {
-      $(".header").addClass('header__fixed');
-      $("body").addClass('fixed');
+      $(".header_position").addClass('header_position__fixed');
+      //$("body").addClass('fixed');
     }
   });
   //menu toggle

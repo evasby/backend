@@ -32,9 +32,12 @@
 		}
 	}
 	&_link{
+		display: inline-block;
 		margin: 0 0 0 43px;
 		font-size: 14px;
+		line-height: 1;
 		@include link(rgba(255,255,255,.6), rgba(255,255,255,.6));
+		font-family: $font;
 		text-transform: uppercase;
 		//underline
 		position: relative;

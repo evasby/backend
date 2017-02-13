@@ -36,6 +36,7 @@
 		}
 	}
 	&_link{
+		display: inline-block;
 		text-decoration: none;
 		@include link(rgba(255,255,255,.6), rgba(255,255,255,.6));
 		//underline

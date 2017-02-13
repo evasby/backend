@@ -1,28 +1,55 @@
 .header{
 	height: 124px;
-	padding: 39px 0 0;
-	background-color: $black;
-	&__fixed{
-		padding: 19px 0 0;
-		position: fixed;
-		z-index: 2;
-		top: 0;
-		left: 0;
-		height: 75px;
-		width: 100%;
-	}
 	//mobile
 	@include break3{
-		position: fixed;
-		z-index: 2;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: auto;
-		padding: 20px 0;
+		height: 77px;
+	}
+	&__services{
+		height: 395px;
+		background: #1b1815 url('../images/bg-services-header.jpg') left top no-repeat;
+		//mobile
+		@include break3{
+			height: 77px;
+			background: $black;
+		}
+	}
+	&_position{
+		height: 124px;
+		padding: 39px 0 0;
+		background-color: $black;
 		&__fixed{
+			padding: 19px 0 0;
+			position: fixed;
+			z-index: 2;
+			top: 0;
+			left: 0;
+			height: 75px;
+			width: 100%;
+			background-color: $black;
+		}
+		//mobile
+		@include break3{
+			position: fixed;
+			z-index: 2;
+			top: 0;
+			left: 0;
+			width: 100%;
 			height: auto;
 			padding: 20px 0;
+			&__fixed{
+				height: auto;
+				padding: 20px 0;
+			}
+		}
+		.header__services &{
+			background-color: transparent;
+			&__fixed{
+				background-color: $black;
+			}
+			//mobile
+			@include break3{
+				background-color: $black;
+			}
 		}
 	}
 	&_wrap{
