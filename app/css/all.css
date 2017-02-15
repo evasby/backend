@@ -2996,8 +2996,8 @@ pre {
   .services-block_link {
     display: block;
     overflow: hidden;
-    height: 272px;
-    padding: 0 20px 0 34px;
+    height: 318px;
+    padding: 0 30px;
     color: #000; }
     .services-block_link:link {
       color: #000; }
@@ -3007,9 +3007,12 @@ pre {
       color: #000; }
     .services-block_link:hover {
       color: #000; }
+    @media all and (max-width: 1190px) {
+      .services-block_link {
+        height: 272px; } }
   .services-block_image {
     display: block;
-    height: 110px;
+    height: 125px;
     padding: 8px 0 0;
     text-align: center; }
     .services-block_image:after {
@@ -3019,31 +3022,30 @@ pre {
       height: 100%; }
     @media all and (max-width: 1190px) {
       .services-block_image {
-        height: 125px;
         padding: 16px 0 0; } }
     .services-block_image .svg {
       vertical-align: middle;
       width: 70px; }
       .services-block_image .svg__arrows {
-        margin: 4px 12px 0 0;
+        margin: 4px 0 0;
         width: 64px;
         height: 64px; }
       .services-block_image .svg__gear {
-        margin: 2px 12px 0 0;
+        margin: 2px 0 0;
         width: 69px;
         height: 69px; }
       .services-block_image .svg__braces {
-        margin: 0 10px 2px 0;
+        margin: 0 0 2px;
         width: 64px;
         height: 60px; }
       .services-block_image .svg__lamp {
-        margin: 0 12px 6px 0;
+        margin: 0 0 6px;
         width: 75px;
         height: 80px; }
   .services-block_name {
     display: inline;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 22px;
     text-transform: uppercase;
     letter-spacing: 0.3px;
     -webkit-transition: -webkit-box-shadow 0.2s;

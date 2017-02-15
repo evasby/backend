@@ -175,14 +175,17 @@
 	&_link{
 		display: block;
 		overflow: hidden;
-		height: 272px;
-		padding: 0 20px 0 34px;
+		height: 318px;
+		padding: 0 30px;
 		@include link($black, $black);
+		//tablet
+		@include break1{
+			height: 272px;
+		}
 	}
 	&_image{
 		display: block;
-		//old height: 125px;
-		height: 110px;
+		height: 125px;
 		//old padding: 16px 0 0;
 		padding: 8px 0 0;
 		text-align: center;	
@@ -194,29 +197,28 @@
 		}
 		//tablet
 		@include break1{
-			height: 125px;
 			padding: 16px 0 0;
 		}
 		.svg{
 			vertical-align: middle;
 			width: 70px;
 			&__arrows{
-				margin: 4px 12px 0 0;
+				margin: 4px 0 0;
 				width: 64px;
 				height: 64px;
 			}
 			&__gear{
-				margin: 2px 12px 0 0;
+				margin: 2px 0 0;
 				width: 69px;
 				height: 69px;
 			}
 			&__braces{
-				margin: 0 10px 2px 0;
+				margin: 0 0 2px;
 				width: 64px;
 				height: 60px;
 			}
 			&__lamp{
-				margin: 0 12px 6px 0;
+				margin: 0 0 6px;
 				width: 75px;
 				height: 80px;
 			}
@@ -225,8 +227,7 @@
 	&_name{
 		display: inline;
 		font-size: 14px;
-		//old lh 22px
-		line-height: 18px;
+		line-height: 22px;
 		text-transform: uppercase;
 		letter-spacing: 0.3px;
 		//underline
