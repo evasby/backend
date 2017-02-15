@@ -64,6 +64,7 @@
 		}
 	}
 	&_name{
+		padding: 0 30px 0 0;
 		min-height: 56px;
 		font-size: 14px;
 		line-height: 22px;
@@ -107,11 +108,11 @@
 	}
 	&_right{
 		display: block;
-		padding: 36px 65px 0 0;
+		padding: 36px 35px 0 0;
 		overflow: hidden;
 		//tablet2
 		@include break2{
-			padding: 24px 30px 0 30px;
+			padding: 24px 20px 0 30px;
 		}
 		//mobile
 		@include break3{
