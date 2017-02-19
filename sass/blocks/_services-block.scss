@@ -40,7 +40,7 @@
 			content: '';
 			position: absolute;
 			z-index: -1;
-			top: -196px;
+			top: -194px;
 			left: 50%;
 			margin: 0 0 0 -380px;
 			width: 0;
@@ -50,7 +50,7 @@
 			border-color: transparent transparent #fff transparent;
 			//tablet 2
 			@include break2{
-				top: -150px;
+				top: -148px;
 				margin: 0 0 0 -250px;
 				border-width: 0 250px 150px 250px;
 			}
@@ -58,7 +58,7 @@
 		&:after{
 			content: '';
 			position: absolute;
-			bottom: -97px;
+			bottom: -95px;
 			left: 50%;
 			margin: 0 0 0 -313px;
 			width: 0;
@@ -79,6 +79,7 @@
 	}
 	&_more{
 		display: inline-block;
+		opacity: 0;
 		padding: 0 14px 0 0;
 		margin: 0 0 40px 3px;
 		font-size: 12px;
@@ -126,6 +127,7 @@
 		}
 		//mobile
 		@include break3{
+			opacity: 1;
 			margin: 0 0 31px 3px;
 		}
 	}
@@ -180,7 +182,8 @@
 		@include link($black, $black);
 		//tablet
 		@include break1{
-			height: 272px;
+			height: auto;
+			padding: 0 30px 25px;
 		}
 	}
 	&_image{

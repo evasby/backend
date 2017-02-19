@@ -1,8 +1,9 @@
 .contacts{
-	min-height: 1138px;
+	//min-height: 1138px;
+	min-height: 920px;
 	padding: 108px 0 0;
-	background: #1b1815 url('../images/bg-contacts.jpg') 50% top no-repeat;
-	background-size: cover;
+	background: #1b1815 url('../images/bg-contacts.jpg') 50% -80px no-repeat;
+	//background-size: cover;
 	//mobile
 	@include break3{
 		min-height: 0;
@@ -12,7 +13,8 @@
 	}
 	&_title{
 		text-align: center;
-		margin: 0 0 130px;
+		//margin: 0 0 130px;
+		margin: 0 0 50px;
 		color: #fff;
 		//mobile
 		@include break3{
@@ -67,7 +69,7 @@
 	&_content{
 		height: 157px;
 		margin: 0 0 0 5px;
-		padding: 21px 36px;
+		padding: 15px 36px;
 		background-color: #fff;
 		//mobile
 		@include break3{
@@ -76,6 +78,9 @@
 		}
 		p{
 			margin-bottom: 18px;
+		}
+		a{
+			@include link(#000, #000);
 		}
 	}
 }

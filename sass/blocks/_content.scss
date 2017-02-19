@@ -30,6 +30,7 @@
 		padding: 56px 10px 37px;
 	}
 	&_back{
+		display: none;
 		@include link($red, $red);
 		text-align: center;
 		position: absolute;
@@ -38,6 +39,7 @@
 		left: 0;
 		//mobile
 		@include break3{
+			display: inline;
 			position: static;
 		}
 	}
@@ -98,7 +100,9 @@
 		}
 	}
 	&_title{
-		line-height: 52px;
+		//line-height: 52px;
+		line-height: 48px;
+		font-size: 40px;
 		margin: 0 0 56px;
 		letter-spacing: 0.8px;
 		@include break3{

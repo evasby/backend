@@ -1,7 +1,9 @@
 .arrows{
+	width: 15px;
 	height: 47px;
 	margin: 43px 0 0 50px;
 	position: relative;
+	cursor: pointer;
 	&:before{
 		content: '';
 		position: absolute;

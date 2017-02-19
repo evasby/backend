@@ -27,4 +27,10 @@ $(document).ready(function(){
     $(".menu").removeClass('menu__on');
     e.stopPropagation();
   });
+  //scroll to services
+  $(".arrows").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".services-block").offset().top + 80
+    }, 400);
+  });
 });
