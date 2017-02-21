@@ -41,6 +41,10 @@ b, strong{
 em{
   font-style: italic;
 }
+input{
+	-webkit-appearance: none;
+  border-radius:0;
+}
 button, input[type="reset"], input[type="button"], input[type="submit"] {
   box-shadow: none;
 }
