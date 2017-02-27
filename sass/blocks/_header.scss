@@ -6,8 +6,9 @@
 		height: 77px;
 	}
 	&__services{
-		height: 395px;
-		background: #1b1815 url('../images/bg-services-header.jpg') left top no-repeat;
+		//height: 395px;
+		height: 250px;
+		background: #1b1815 url('../images/bg-services-header.jpg') 50% top no-repeat;
 		//mobile
 		@include break3{
 			height: 77px;

@@ -2515,8 +2515,8 @@ pre {
     .header {
       height: 77px; } }
   .header__services {
-    height: 395px;
-    background: #1b1815 url("../images/bg-services-header.jpg") left top no-repeat; }
+    height: 250px;
+    background: #1b1815 url("../images/bg-services-header.jpg") 50% top no-repeat; }
     @media all and (max-width: 768px) {
       .header__services {
         height: 77px;
@@ -3401,27 +3401,30 @@ pre {
   margin: 0 auto;
   padding: 30px 10px 487px;
   position: relative;
-  z-index: 1; }
-  .content:before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: -194px;
-    left: 50%;
-    margin: 0 0 0 -380px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 380px 196px 380px;
-    border-color: transparent transparent #fff transparent; }
-    @media all and (max-width: 1024px) {
-      .content:before {
-        top: -150px;
-        margin: 0 0 0 -250px;
-        border-width: 0 250px 150px 250px; } }
-    @media all and (max-width: 768px) {
-      .content:before {
-        display: none; } }
+  z-index: 1;
+  /*&:before{
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: -194px;
+		left: 50%;
+		margin: 0 0 0 -380px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 380px 196px 380px;
+		border-color: transparent transparent #fff transparent;
+		//tablet 2
+		@include break2{
+			top: -150px;
+			margin: 0 0 0 -250px;
+			border-width: 0 250px 150px 250px;
+		}
+		//mobile
+		@include break3{
+			display: none;
+		}
+	}*/ }
   @media all and (max-width: 768px) {
     .content {
       padding: 56px 10px 37px; } }
@@ -3506,13 +3509,17 @@ pre {
       width: 99px;
       height: 99px; }
   .content_title {
+    height: 100px;
+    display: table-cell;
+    vertical-align: middle;
     line-height: 48px;
     font-size: 36px;
     margin: 3px 0 0;
     letter-spacing: 0.8px; }
     @media all and (max-width: 768px) {
       .content_title {
-        margin: 0 0 27px;
+        display: block;
+        height: auto;
         font-size: 35px;
         line-height: 1; } }
   .content_content {

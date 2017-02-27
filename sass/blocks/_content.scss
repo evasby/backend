@@ -4,7 +4,7 @@
 	padding: 30px 10px 487px;
 	position: relative;
 	z-index: 1;
-	&:before{
+	/*&:before{
 		content: '';
 		position: absolute;
 		z-index: -1;
@@ -26,7 +26,7 @@
 		@include break3{
 			display: none;
 		}
-	}
+	}*/
 	//mobile
 	@include break3{
 		padding: 56px 10px 37px;
@@ -109,12 +109,16 @@
 	}
 	&_title{
 		//line-height: 52px;
+		height: 100px;
+		display: table-cell;
+		vertical-align: middle;
 		line-height: 48px;
 		font-size: 36px;
 		margin: 3px 0 0;
 		letter-spacing: 0.8px;
 		@include break3{
-			margin: 0 0 27px;
+			display: block;
+			height: auto;
 			font-size: 35px;
 			line-height: 1;
 		}
