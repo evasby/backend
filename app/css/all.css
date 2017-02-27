@@ -2510,7 +2510,7 @@ pre {
   color: rgba(255, 255, 255, 0.7); }
 
 .header {
-  height: 124px; }
+  height: 85px; }
   @media all and (max-width: 768px) {
     .header {
       height: 77px; } }
@@ -2522,8 +2522,8 @@ pre {
         height: 77px;
         background: #000; } }
   .header_position {
-    height: 124px;
-    padding: 39px 0 0;
+    height: 85px;
+    padding: 22px 0 0;
     background-color: #000; }
     .header_position__fixed {
       padding: 19px 0 0;
@@ -2608,19 +2608,19 @@ pre {
   @media all and (max-width: 768px) {
     .menu_wrap {
       padding: 27px 0 0;
-      width: 70%;
-      height: 100%;
+      width: 100%;
+      height: auto;
       background-color: #fff;
       cursor: default;
       position: absolute;
-      top: 0;
-      left: -70%;
+      bottom: -300px;
+      left: 0;
       -webkit-transition: all 0.2s;
       transition: all 0.2s; }
       .menu__on .menu_wrap {
-        -webkit-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-        transform: translateX(100%); } }
+        -webkit-transform: translateY(-300px);
+        -ms-transform: translateY(-300px);
+        transform: translateY(-300px); } }
   .menu_link {
     display: inline-block;
     margin: 0 0 0 43px;
@@ -3315,7 +3315,7 @@ pre {
         margin: 0;
         padding: 55px 10px 60px;
         position: static;
-        text-align: left; } }
+        text-align: right; } }
   .form-block_title {
     color: #fff;
     letter-spacing: 0.5px; }
@@ -3337,7 +3337,8 @@ pre {
       .form-block_wrap {
         width: 100%;
         margin: 0 auto 34px;
-        padding: 32px 0 0; } }
+        padding: 32px 0 0;
+        text-align: left; } }
   .form-block_left {
     float: left;
     width: 50%;
@@ -3822,11 +3823,11 @@ pre {
   stroke: #C0252A; }
 
 .footer {
-  padding: 251px 10px 70px;
+  padding: 200px 10px 20px;
   background-color: #1b1815; }
   @media all and (max-width: 768px) {
     .footer {
-      padding: 60px 10px 30px; } }
+      padding: 30px 10px 0; } }
   .footer_wrap {
     max-width: 800px;
     margin: 0 auto;

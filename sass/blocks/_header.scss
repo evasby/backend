@@ -1,5 +1,6 @@
 .header{
-	height: 124px;
+	//height: 124px;
+	height: 85px;
 	//mobile
 	@include break3{
 		height: 77px;
@@ -14,8 +15,9 @@
 		}
 	}
 	&_position{
-		height: 124px;
-		padding: 39px 0 0;
+		//height: 124px;
+		height: 85px;
+		padding: 22px 0 0;
 		background-color: $black;
 		&__fixed{
 			padding: 19px 0 0;
