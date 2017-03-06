@@ -1,10 +1,8 @@
 .footer{
-	//padding: 251px 10px 70px;
 	padding: 200px 10px 20px;
 	background-color: #1b1815;
 	//mobile
 	@include break3{
-		//padding: 60px 10px 30px;
 		padding: 30px 10px 0;
 	}
 	&_wrap{
@@ -27,6 +25,7 @@
 	&_left{
 		float: left;
 		width: 33.33%;
+		min-height: 1px;
 		padding: 0 0 0 139px;
 		//mobile
 		@include break3{
@@ -39,6 +38,7 @@
 	&_center{
 		float: left;
 		width: 33.33%;
+		min-height: 1px;
 		padding: 0 0 0 76px;
 		//mobile
 		@include break3{
@@ -51,6 +51,7 @@
 	&_right{
 		float: left;
 		width: 33.33%;
+		min-height: 1px;
 		padding: 0 0 0 57px;
 		//mobile
 		@include break3{

@@ -1,12 +1,10 @@
 .header{
-	//height: 124px;
 	height: 85px;
 	//mobile
 	@include break3{
 		height: 77px;
 	}
 	&__services{
-		//height: 395px;
 		height: 250px;
 		background: #1b1815 url('../images/bg-services-header.jpg') 50% top no-repeat;
 		//mobile
@@ -16,7 +14,6 @@
 		}
 	}
 	&_position{
-		//height: 124px;
 		height: 85px;
 		padding: 22px 0 0;
 		background-color: $black;

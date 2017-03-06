@@ -49,7 +49,7 @@
 		transition: box-shadow 0.2s;
 		.pager_left:hover &,
 		.pager_right:hover &{
-			box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,1);
+			box-shadow: inset 0px -1px 0px 0px $red;
 		}
 	}
 }

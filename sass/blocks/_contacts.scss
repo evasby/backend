@@ -1,19 +1,15 @@
 .contacts{
-	//min-height: 1138px;
 	min-height: 920px;
 	padding: 108px 0 0;
 	background: #1b1815 url('../images/bg-contacts.jpg') 50% -80px no-repeat;
-	//background-size: cover;
 	//mobile
 	@include break3{
 		min-height: 0;
 		padding: 55px 0 225px;
 		background: #1b1815 url('../images/bg-contacts-mobile.jpg') 50% top no-repeat;
-		//background-size: cover;
 	}
 	&_title{
 		text-align: center;
-		//margin: 0 0 130px;
 		margin: 0 0 50px;
 		color: #fff;
 		//mobile

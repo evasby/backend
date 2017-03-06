@@ -4,29 +4,6 @@
 	padding: 30px 10px 487px;
 	position: relative;
 	z-index: 1;
-	/*&:before{
-		content: '';
-		position: absolute;
-		z-index: -1;
-		top: -194px;
-		left: 50%;
-		margin: 0 0 0 -380px;
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: 0 380px 196px 380px;
-		border-color: transparent transparent #fff transparent;
-		//tablet 2
-		@include break2{
-			top: -150px;
-			margin: 0 0 0 -250px;
-			border-width: 0 250px 150px 250px;
-		}
-		//mobile
-		@include break3{
-			display: none;
-		}
-	}*/
 	//mobile
 	@include break3{
 		padding: 56px 10px 37px;
@@ -108,7 +85,6 @@
 		}
 	}
 	&_title{
-		//line-height: 52px;
 		height: 100px;
 		display: table-cell;
 		vertical-align: middle;
@@ -124,7 +100,6 @@
 		}
 	}
 	&_content{
-		//padding: 0 65px 0 39px;
 		letter-spacing: 0.2px;
 		//mobile
 		@include break3{
