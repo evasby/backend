@@ -33,6 +33,10 @@
 		padding: 0 0 35px;
 		letter-spacing: 1px;
 		color: #fff;
+		//mobile
+		@include break3{
+			font-size: 32px;
+		}
 	}
 	&_text{
 		width: 395px;
